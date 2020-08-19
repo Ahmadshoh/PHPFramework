@@ -1,0 +1,88 @@
+@media screen and (max-width: 768px) {
+    .top-header .top-menu {
+        display: none;
+    }
+
+    .bookmark {
+        display: block;
+    }
+
+    .top-header {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 7fr 5fr;
+        grid-template-columns: 7fr 5fr;
+    }
+
+    .menu {
+        height: auto;
+    }
+
+    .menu-items ul {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+        grid-row-gap: 5px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .top-header {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+    }
+
+    .logo {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .logo img {
+        width: 80%;
+    }
+
+    .menu-items ul {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 90%;
+        grid-template-columns: 90%;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .cart-items {
+        min-width: 100%;
+    }
+
+    .bookmark {
+        display: none;
+    }
+
+    li.cabins div.cabins-items {
+        position: absolute;
+        max-width: 100%;
+        min-width: 100%;
+        left: 0;
+    }
+
+    li.cabins div.cabins-items div {
+        min-width: 10%;
+        max-width: 10%;
+    }
+
+    li.cabins div.cabins-items div a {
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+/*# sourceMappingURL=media.css.map */

@@ -1,0 +1,154 @@
+.error {
+    padding: 12px 10px 8px;
+    background: #F2DEDE;
+    margin-top: 25px;
+}
+
+.error h4 {
+    color: #A94442;
+    font-size: 16px;
+}
+
+.success {
+    padding: 12px 10px 8px;
+    background: #28a745;
+    margin-top: 25px;
+    width: 100%;
+    display: none;
+}
+
+.success h4 {
+    color: #fff;
+    font-size: 16px;
+}
+
+.slider-img {
+    position: relative;
+}
+
+.slider-img a button {
+    position: absolute;
+    top: 15px;
+    right: 23px;
+}
+
+.editProduct .tabs {
+    margin-bottom: 25px;
+}
+
+.editProduct .tabs .tab {
+    cursor: pointer;
+    border-radius: 15px 15px 0 0;
+    padding: 0.5em 1em;
+    background: #375ECE;
+    color: #eeeeee;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.editProduct .tabs .active {
+    color: #000;
+    background: #fff;
+    border: 1px solid #375ECE;
+}
+
+.toggle-button {
+    margin: 0 20px;
+    position: relative;
+    display: inline-block;
+    color: #3A60D0;
+}
+
+.toggle-button label {
+    display: inline-block;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: left;
+}
+
+.toggle-button input {
+    display: none;
+}
+
+.toggle-button__icon {
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.toggle-button__icon:before,
+.toggle-button__icon:after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    transition: 0.2s ease-out;
+}
+
+.toggle-button label {
+    line-height: 20px;
+    text-indent: 30px;
+}
+
+.toggle-button input[type=checkbox]:checked~.toggle-button__icon {
+    background: #3A60D0;
+}
+
+.toggle-button input[type=checkbox]:checked~.toggle-button__icon:before,
+.toggle-button input[type=checkbox]:checked~.toggle-button__icon:after {
+    opacity: 1;
+}
+
+.toggle-button .toggle-button__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    transition: all 0.2s;
+    border: 2px solid #3A60D0;
+    border-radius: 1px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.toggle-button .toggle-button__icon:before,
+.toggle-button .toggle-button__icon:after {
+    left: 2px;
+    width: 12px;
+    height: 2px;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    top: 35%;
+    background: #fff;
+    opacity: 0;
+    transform-origin: left center;
+}
+
+.toggle-button .toggle-button__icon:before {
+    transform: translate(0, 0) rotate(45deg) scale(0.6, 1);
+}
+
+.toggle-button .toggle-button__icon:after {
+    transform: translate(4px, 6px) rotate(-45deg);
+}
+
+.toggle-button:hover input[type=checkbox]:not(:checked)~.toggle-button__icon {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.group-p{
+    padding: 0;
+    position: relative;
+}
+
+.delete{
+    position: absolute;
+    right: 25px;
+    top: 25%;
+    font-size: 21px;
+}
+.group-p:hover .delete{
+    transition: .5s;
+    z-index: 99999;
+}
